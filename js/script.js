@@ -139,10 +139,3 @@ function resetCarouselAuto() {
 startCarouselAuto();
 window.addEventListener('resize', () => updateCarousel(false));
 
-/* PRODUCT CLICK */
-document.querySelectorAll('.product-card').forEach(card => {
-    card.onclick = () => {
-        window.location.href = `product.html?product=${card.dataset.product}`;
-    };
-});
-

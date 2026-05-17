@@ -1,144 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRUPA Fasteners</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">
-        <img src="assets/logo.png" alt="Company Logo">
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-<!-- HERO SLIDER -->
-<section class="slider">
-    <div class="slides">
-        <div class="slide active">
-            <img src="assets/slide1.png" alt="Industrial Bolts">
-            <div class="slide-content">
-                <h1>High-Strength Fasteners</h1>
-                <p>Precision-engineered bolts and nuts for critical industrial applications.</p>
-                <a href="products.html" class="hero-btn">View Catalog</a>
+    <!-- HERO SLIDER -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="assets/slide1.png" alt="Industrial Bolts">
+                <div class="slide-content">
+                    <h1>High-Strength Fasteners</h1>
+                    <p>Precision-engineered bolts and nuts for critical industrial applications.</p>
+                    <a href="products.html" class="hero-btn">View Catalog</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="assets/slide2.png" alt="Manufacturing Facility">
+                <div class="slide-content">
+                    <h1>Global Supply Chain</h1>
+                    <p>Trusted by major industries worldwide for consistent quality and reliability.</p>
+                    <a href="contact.html" class="hero-btn">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="assets/slide3.png" alt="Precision Screws">
+                <div class="slide-content">
+                    <h1>Quality Assured</h1>
+                    <p>Every fastener is tested to meet international DIN and ISO standards.</p>
+                    <a href="products.html" class="hero-btn">Explore Products</a>
+                </div>
             </div>
         </div>
-        
-        <div class="slide">
-            <img src="assets/slide2.png" alt="Manufacturing Facility">
-            <div class="slide-content">
-                <h1>Global Supply Chain</h1>
-                <p>Trusted by major industries worldwide for consistent quality and reliability.</p>
-                <a href="contact.html" class="hero-btn">Get a Quote</a>
-            </div>
+
+        <button class="arrow left">&#10094;</button>
+        <button class="arrow right">&#10095;</button>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Our Company</h2>
+        <p>
+            <strong>KRUPA Fasteners</strong> is a trusted stockist and wholesaler of stainless steel fasteners, brass
+            turned components, and high-performance industrial fastening solutions serving the pump manufacturing and
+            allied engineering industries in Coimbatore.
+        </p>
+        <p>
+            With <strong>over 30 years of industrial experience</strong>, we successfully meet diverse customer
+            requirements by offering extensive sizes availability, vast ready stocks, highly competitive pricing, and
+            prompt delivery schedules.
+        </p>
+        <p>
+            We also specialize in high-precision customization as per customer drawings, designing and supplying special
+            components to meet unique industrial engineering specifications. Our core commitment is to deliver
+            outstanding product quality with reliable, direct service to build trusted, long-term customer
+            relationships.
+        </p>
+    </section>
+
+    <!-- PRODUCT CAROUSEL -->
+    <section class="product-carousel">
+
+        <div class="products-header">
+            <h2>Our Products</h2>
+            <a href="assets/catalogue.pdf" class="catalogue-btn" download>
+                Download Catalogue
+            </a>
         </div>
 
-        <div class="slide">
-            <img src="assets/slide3.png" alt="Precision Screws">
-            <div class="slide-content">
-                <h1>Quality Assured</h1>
-                <p>Every fastener is tested to meet international DIN and ISO standards.</p>
-                <a href="products.html" class="hero-btn">Explore Products</a>
+        <div class="carousel-container">
+            <button class="c-arrow c-left">&#10094;</button>
+
+            <div class="carousel-track">
+                <div class="product-card" data-product="hex-bolts">
+                    <img src="assets/products/hex-bolts.png" alt="">
+                    <span>Hex Bolts</span>
+                </div>
+
+                <div class="product-card" data-product="hex-nuts">
+                    <img src="assets/products/hex-nuts.png" alt="">
+                    <span>Hex Nuts</span>
+                </div>
+
+                <div class="product-card" data-product="plain-washers">
+                    <img src="assets/products/plain-washers.png" alt="">
+                    <span>Plain Washers</span>
+                </div>
+
+                <div class="product-card" data-product="allen-bolts">
+                    <img src="assets/products/allen-bolts.png" alt="">
+                    <span>Allen Bolts</span>
+                </div>
+
+                <div class="product-card" data-product="cheese-head-screws">
+                    <img src="assets/products/cheese-head-screws.png" alt="">
+                    <span>Cheese Head Screws</span>
+                </div>
+
+                <div class="product-card" data-product="fully-threaded-studs">
+                    <img src="assets/products/fully-threaded-studs.png" alt="">
+                    <span>Fully Threaded Studs</span>
+                </div>
+
+            </div>
+
+            <button class="c-arrow c-right">&#10095;</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Address</h3><br />
+                <p>75, Dr. Rajarathinam Street, Katoor,</p><br />
+                <p>Coimbatore - 641 009.</p><br />
+            </div>
+            <div>
+                <h3>Contact</h3><br />
+                <p>Email: sdcorporation1994@gmail.com</p><br />
+                <p>Phone: 0422 - 4973350</p><br />
+                <p>Sagar: +91 93632 65787</p><br />
+                <p>Deepak: +91 90429 17350</p><br />
             </div>
         </div>
-    </div>
+    </footer>
 
-    <button class="arrow left">&#10094;</button>
-    <button class="arrow right">&#10095;</button>
-
-    <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about">
-    <h2>About Our Company</h2>
-    <p>
-        Welcome to <strong>KRUPA Fasteners</strong>, your premier destination for high-performance industrial fastening solutions. Based in Coimbatore, we specialize in the manufacturing and distribution of a comprehensive range of precision-engineered nuts, bolts, screws, and specialized fasteners. 
-    </p>
-    <p>
-        With a steadfast commitment to quality, all our products adhere to stringent <strong>DIN and ISO standards</strong>. We are specialists in <strong>SS and Brass Turned Components</strong> as per drawing, ensuring maximum reliability for the most demanding applications in automotive, construction, and heavy engineering sectors. Our mission is to empower global industries by providing durable, high-quality hardware.
-    </p>
-</section>
-
-<!-- PRODUCT CAROUSEL -->
-<section class="product-carousel">
-
-    <div class="products-header">
-        <h2>Our Products</h2>
-        <a href="assets/catalogue.pdf" class="catalogue-btn" download>
-            Download Catalogue
-        </a>
-    </div>
-
-    <div class="carousel-container">
-        <button class="c-arrow c-left">&#10094;</button>
-        
-        <div class="carousel-track">
-            <div class="product-card" data-product="hex-bolts">
-                <img src="assets/products/hex-bolts.png" alt="">
-                <span>Hex Bolts</span>
-            </div>
-
-            <div class="product-card" data-product="hex-nuts">
-                <img src="assets/products/hex-nuts.png" alt="">
-                <span>Hex Nuts</span>
-            </div>
-
-            <div class="product-card" data-product="plain-washers">
-                <img src="assets/products/plain-washers.png" alt="">
-                <span>Plain Washers</span>
-            </div>
-
-            <div class="product-card" data-product="allen-bolts">
-                <img src="assets/products/allen-bolts.png" alt="">
-                <span>Allen Bolts</span>
-            </div>
-
-            <div class="product-card" data-product="cheese-head-screws">
-                <img src="assets/products/cheese-head-screws.png" alt="">
-                <span>Cheese Head Screws</span>
-            </div>
-
-            <div class="product-card" data-product="fully-threaded-studs">
-                <img src="assets/products/fully-threaded-studs.png" alt="">
-                <span>Fully Threaded Studs</span>
-            </div>
-
-        </div>
-
-        <button class="c-arrow c-right">&#10095;</button>
-    </div>
-</section>
-
-
-<footer>
-    <div class="footer-content">
-        <div>
-            <h3>Address</h3>
-            <p>75, Dr. Rajarathinam Street, Katoor,</p>
-            <p>Coimbatore - 641 009.</p>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <p>Email: sdcorporation1994@gmail.com</p>
-            <p>Phone: 0422 - 4973350</p>
-            <p>Sagar: +91 93632 65787</p>
-            <p>Deepak: +91 90429 17350</p>
-        </div>
-    </div>
-</footer>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

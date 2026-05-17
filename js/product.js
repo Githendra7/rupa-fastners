@@ -10,11 +10,6 @@ const productsData = {
         image: "assets/products/square-nuts.png",
         description: "<ul><li>Conforms to DIN 557 manufacturing standards.</li><li>Four-sided geometry provides a large bearing surface to resist loosening.</li><li>Ideal for use in restricted channels or blind-spot applications.</li><li>Frequently utilized in agricultural machinery and heavy industrial assemblies.</li></ul>"
     },
-    "weld-nuts": {
-        title: "Weld Nuts",
-        image: "assets/products/weld-nuts.png",
-        description: "<ul><li>Conforms to DIN 929 (Hex) or DIN 928 (Square) welding standards.</li><li>Designed for permanent projection or spot welding to sheet metal.</li><li>Features piloting lugs to ensure accurate coaxial placement.</li><li>Engineered for high heat resistance to maintain structural integrity post-welding.</li></ul>"
-    },
     "lock-nuts": {
         title: "Lock Nuts",
         image: "assets/products/lock-nuts.png",
@@ -25,25 +20,10 @@ const productsData = {
         image: "assets/products/nylock-nuts.png",
         description: "<ul><li>Prevailing torque type nut with a durable non-metallic nylon insert.</li><li>Excellent performance across wide thermal expansion and contraction cycles.</li><li>Reusable locking mechanism designed for maintenance and field service.</li><li>Compliant with DIN 982 for high-profile load-bearing applications.</li></ul>"
     },
-    "flange-nuts": {
-        title: "Flange Nuts",
-        image: "assets/products/flange-nuts.png",
-        description: "<ul><li>Conforms to DIN 6923 standards with an integrated washer flange.</li><li>Serrated base options available for maximum anti-rotation locking.</li><li>Effectively distributes clamp load over a wider material surface.</li><li>Reduces assembly time by eliminating the need for separate flat washers.</li></ul>"
-    },
     "dome-nuts": {
         title: "Dome Nuts",
         image: "assets/products/dome-nuts.png",
         description: "<ul><li>Conforms to DIN 1587 high-crown acorn nut manufacturing standards.</li><li>Enclosed thread design protects against external corrosion and injury.</li><li>Provides a decorative and snag-free finish for exterior assemblies.</li><li>Available in high-grade stainless steel, brass, and chrome-plated steel.</li></ul>"
-    },
-    "castle-nuts": {
-        title: "Castle Nuts",
-        image: "assets/products/castle-nuts.png",
-        description: "<ul><li>Conforms to DIN 935 / ISO 7035 slotted hexagonal nut standards.</li><li>Features deep slots designed for use with split cotter pins or safety wire.</li><li>Ensures an absolute mechanical lock for rotating axles and shafts.</li><li>Critical component for high-security automotive and aerospace assemblies.</li></ul>"
-    },
-    "wing-nuts": {
-        title: "Wing Nuts",
-        image: "assets/products/wing-nuts.png",
-        description: "<ul><li>Conforms to DIN 315 hand-operable fastener standards.</li><li>Ergonomic 'wing' geometry allows for quick tool-free installation.</li><li>Designed for applications requiring frequent manual adjustment or cleaning.</li><li>Available in forged or cast construction for superior grip and durability.</li></ul>"
     },
     "plug-nuts": {
         title: "Plug Nuts",
@@ -87,25 +67,25 @@ const productsData = {
         image: "assets/products/allen-csk-screws.png",
         description: "<ul><li>DIN 7991 / ISO 10642 hex socket countersunk head machine screws.</li><li>Combines high-strength internal hex drive with flush-mount aesthetics.</li><li>Capable of high preload without risking damage to the drive recess.</li><li>Standard fastener for precision machinery and modern tool design.</li></ul>"
     },
-    "button-head-screws": {
-        title: "Button Head Screws",
-        image: "assets/products/button-head-screws.png",
-        description: "<ul><li>ISO 7380 hex socket button head screws for low-profile applications.</li><li>Rounded, dome-shaped head provides safety by reducing snag hazards.</li><li>Wider bearing surface compared to standard socket head cap screws.</li><li>Widely used in bicycles, robotics, and decorative furniture.</li></ul>"
-    },
     "grub-screws": {
         title: "Grub Screws",
         image: "assets/products/grub-screws.png",
         description: "<ul><li>DIN 913 / 914 / 916 headless socket set screws for internal securing.</li><li>Available with various points including cup, flat, and cone styles.</li><li>Designed to exert radial force to lock components onto shafts.</li><li>Precision ground threads for high-torque holding power.</li></ul>"
     },
-    "machine-screws": {
-        title: "Machine Screws",
-        image: "assets/products/machine-screws.png",
-        description: "<ul><li>Uniformly threaded fasteners conforming to global DIN/ISO standards.</li><li>Designed for use in pre-tapped holes or in conjunction with nuts.</li><li>Available in a vast range of head styles, drives, and materials.</li><li>Foundation fastener for all industrial and mechanical equipment.</li></ul>"
-    },
     "self-tapping-screws": {
         title: "Self Tapping Screws",
         image: "assets/products/self-tapping-screws.png",
         description: "<ul><li>DIN 7981 / 7982 / 7983 hardened screws for metal and plastic.</li><li>Thread-forming or thread-cutting capability eliminates pre-tapping.</li><li>Sharp, high-pitch threads ensure a secure and rapid installation.</li><li>Ideal for sheet metal work, HVAC, and plastic housing assembly.</li></ul>"
+    },
+    "name-plate-rivets": {
+        title: "Name Plate Rivets",
+        image: "assets/products/name-plate-rivets.png",
+        description: "<ul><li>Conforms to ISO 2768 or relevant precision tolerance standards.</li><li>Designed for permanent fastening of nameplates, logos, and instructional labels.</li><li>Easy hammer-in installation without the need for specialised threading or nuts.</li><li>Available in aluminium, brass, and stainless steel for excellent corrosion resistance.</li></ul>"
+    },
+    "name-plate": {
+        title: "Name Plate Screws",
+        image: "assets/products/name-plate-rivets.png",
+        description: "<ul><li>Conforms to ISO 2768 or relevant precision tolerance standards.</li><li>Designed for permanent fastening of nameplates, logos, and instructional labels.</li><li>Easy hammer-in installation without the need for specialised threading or nuts.</li><li>Available in aluminium, brass, and stainless steel for excellent corrosion resistance.</li></ul>"
     },
 
     // WASHERS
@@ -129,20 +109,15 @@ const productsData = {
         image: "assets/products/serrated-washers.png",
         description: "<ul><li>DIN 6798 internal or external tooth lock washers for safety.</li><li>Multiple teeth dig into surfaces to provide maximum grip.</li><li>Provides high electrical conductivity by piercing surface coatings.</li><li>Best suited for ground connections and high-vibration applications.</li></ul>"
     },
-    "wave-washers": {
-        title: "Wave Washers",
-        image: "assets/products/wave-washers.png",
-        description: "<ul><li>DIN 137 wave-shaped spring washers for axial cushioning.</li><li>Used to take up axial play and provide light spring pressure.</li><li>Prevents noise and rattling in ball bearing and motor assemblies.</li><li>Ideal for applications with limited axial space.</li></ul>"
-    },
     "nord-lock-washers": {
         title: "Nord-Lock Washers",
         image: "assets/products/nord-lock-washers.png",
         description: "<ul><li>Original wedge-locking technology using tension instead of friction.</li><li>Ensures maximum safety for joints exposed to severe vibration.</li><li>Maintains high preload and is easily removable for maintenance.</li><li>Critical for railway, mining, and oil & gas infrastructure.</li></ul>"
     },
-    "fender-washers": {
-        title: "Fender Washers",
-        image: "assets/products/fender-washers.png",
-        description: "<ul><li>Flat washers with an exceptionally large outer diameter (OD).</li><li>Specifically designed for load distribution on thin sheet metal.</li><li>Prevents 'pull-through' in soft materials like wood or plastic.</li><li>Commonly used in automotive bodywork and signage installation.</li></ul>"
+    "wave-washers": {
+        title: "Wave Washers",
+        image: "assets/products/wave-washers.png",
+        description: "<ul><li>DIN 137 wave-shaped spring washers for axial cushioning.</li><li>Used to take up axial play and provide light spring pressure.</li><li>Prevents noise and rattling in ball bearing and motor assemblies.</li><li>Ideal for applications with limited axial space.</li></ul>"
     },
     "fibre-washers": {
         title: "Fibre Washers",
@@ -154,9 +129,9 @@ const productsData = {
         image: "assets/products/cable-washers.png",
         description: "<ul><li>Specialized washers designed for cable management and protection.</li><li>Features smooth inner edges to prevent wire insulation damage.</li><li>Provides strain relief and keeps cables centered in pass-throughs.</li><li>Essential for industrial control panels and wiring harnesses.</li></ul>"
     },
-    "o-ring-washers": {
-        title: "O Ring Washers",
-        image: "assets/products/o-ring-washers.png",
+    "o-ring": {
+        title: "O ring",
+        image: "assets/products/o-ring.png",
         description: "<ul><li>Elastomeric circular gaskets designed for high-pressure sealing.</li><li>Forms a leak-proof seal through compression in a dedicated groove.</li><li>Available in NBR, Viton, and Silicone for various chemical compatibility.</li><li>Universal solution for hydraulic, pneumatic, and fluid systems.</li></ul>"
     },
 
@@ -170,11 +145,6 @@ const productsData = {
         title: "Allen Bolts",
         image: "assets/products/allen-bolts.png",
         description: "<ul><li>DIN 912 / ISO 4762 internal hex socket head cap screws.</li><li>Ideal for applications requiring high-strength in compact spaces.</li><li>Knurled head options available for better manual grip during assembly.</li><li>Extensively used in engine blocks, robotics, and precision tooling.</li></ul>"
-    },
-    "flange-bolts": {
-        title: "Flange Bolts",
-        image: "assets/products/flange-bolts.png",
-        description: "<ul><li>DIN 6921 hex bolts with an integrated bearing flange.</li><li>Eliminates the need for a separate washer while improving load spread.</li><li>Serrated flange options provide superior resistance to vibration.</li><li>Widely used in automotive chassis and structural frame assemblies.</li></ul>"
     },
 
     // STUDS
@@ -216,16 +186,6 @@ const productsData = {
         title: "B-Type Circlips",
         image: "assets/products/b-type-circlips.png",
         description: "<ul><li>DIN 472 internal retaining rings for use in bores and housings.</li><li>Ensures components like seals and bearings stay in their axial position.</li><li>High elastic recovery properties for repeated installation cycles.</li><li>Ideal for gearboxes, hydraulic cylinders, and motor housings.</li></ul>"
-    },
-    "c-type-circlips": {
-        title: "C-Type Circlips",
-        image: "assets/products/c-type-circlips.png",
-        description: "<ul><li>Simplified C-shaped snap rings for light-duty axial retention.</li><li>Quick and easy installation using standard circlip pliers.</li><li>Cost-effective solution for non-critical mechanical assemblies.</li><li>Widely used in small appliances and consumer hardware.</li></ul>"
-    },
-    "e-type-circlips": {
-        title: "E-Type Circlips",
-        image: "assets/products/e-type-circlips.png",
-        description: "<ul><li>DIN 6799 radial retaining rings that can be installed from the side.</li><li>Perfect for applications where end-access to the shaft is limited.</li><li>Provides high contact area for secure retention on small diameters.</li><li>Standard choice for office equipment and electronic linkages.</li></ul>"
     }
 };
 
