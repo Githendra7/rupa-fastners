@@ -234,15 +234,24 @@ body {
 
 .carousel-container {
     position: relative;
-    display: flex;
-    align-items: center;
     overflow: hidden;
+    width: 100%;
 }
+
+/* TRACK */
 
 .carousel-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    padding: 10px 0;
+    gap: 20px;
+    width: max-content;
+
+    animation: autoScroll 40s linear infinite;
+}
+
+/* Pause on hover */
+
+.carousel-track:hover {
+    animation-play-state: paused;
 }
 
 .c-arrow {
