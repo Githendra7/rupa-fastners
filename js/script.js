@@ -54,88 +54,25 @@ function resetAuto() {
 
 startAuto();
 
-/* PRODUCT CAROUSEL LOGIC */
-const track = document.querySelector('.carousel-track');
-const cNextBtn = document.querySelector('.c-arrow.c-right');
-const cPrevBtn = document.querySelector('.c-arrow.c-left');
+// Optional: Add scroll spy to highlight active nav links
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.navbar nav a');
 
-// Clone items for seamless loop
-const originalCards = Array.from(track.children);
-originalCards.forEach(card => {
-    const clone = card.cloneNode(true);
-    track.appendChild(clone);
-});
-
-let carouselIndex = 0;
-let carouselAutoInterval;
-let isCarouselAnimating = false;
-
-function getCardWidth() {
-    const firstCard = track.querySelector('.product-card');
-    if (!firstCard) return 0;
-    const style = window.getComputedStyle(firstCard);
-    const marginRight = parseFloat(style.marginRight);
-    return firstCard.offsetWidth + marginRight;
-}
-
-function updateCarousel(animate = true) {
-    if (animate) {
-        track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-    } else {
-        track.style.transition = 'none';
-    }
-    
-    const cardWidth = getCardWidth();
-    track.style.transform = `translateX(-${carouselIndex * cardWidth}px)`;
-}
-
-// Handle seamless jump after transition
-track.addEventListener('transitionend', () => {
-    isCarouselAnimating = false;
-    const totalOriginal = originalCards.length;
-    
-    if (carouselIndex >= totalOriginal) {
-        // Jump back to original start
-        carouselIndex = 0;
-        updateCarousel(false);
-    } else if (carouselIndex < 0) {
-        // Jump to cloned end
-        carouselIndex = totalOriginal - 1;
-        updateCarousel(false);
-    }
-});
-
-cNextBtn.onclick = () => {
-    if (isCarouselAnimating) return;
-    isCarouselAnimating = true;
-    carouselIndex++;
-    updateCarousel();
-    resetCarouselAuto();
-};
-
-cPrevBtn.onclick = () => {
-    if (isCarouselAnimating) return;
-    isCarouselAnimating = true;
-    carouselIndex--;
-    updateCarousel();
-    resetCarouselAuto();
-};
-
-function startCarouselAuto() {
-    carouselAutoInterval = setInterval(() => {
-        if (!isCarouselAnimating) {
-            isCarouselAnimating = true;
-            carouselIndex++;
-            updateCarousel();
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
         }
-    }, 3000);
-}
+    });
 
-function resetCarouselAuto() {
-    clearInterval(carouselAutoInterval);
-    startCarouselAuto();
-}
-
-startCarouselAuto();
-window.addEventListener('resize', () => updateCarousel(false));
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
+    });
+});
 
